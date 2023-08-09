@@ -1,0 +1,57 @@
+1 : HTML elements have opening tags like <h1> and closing tags like </h1>.
+    The text for an element goes between its opening and closing tags.
+
+2 : The h1 through h6 heading elements are used to signify the importance of content below them. 
+    The lower the number, the higher the importance, 
+    so h2 elements have less importance than h1 elements. 
+    Only use one h1 element per page and place lower importance headings below higher importance headings.
+
+3 : The p element is used to create a paragraph of text on websites.
+
+4 : Commenting allows you to leave messages without affecting the browser display. 
+    It also allows you to make code inactive. 
+    A comment in HTML starts with <!--, contains any number of lines of text, and ends with -->
+
+5 : HTML5 has some elements that identify different content areas. 
+    These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.
+
+6 : In the previous step, 
+    you put the h1, h2, comment, and p elements inside the main element. 
+    This is called nesting. 
+    Nested elements should be placed two spaces further to the right of the element they are nested in. 
+    This spacing is called indentation and it is used to make HTML easier to read.
+
+7 : You can add images to your website by using the img element. 
+    img elements have an opening tag without a closing tag. 
+    A tag for an element without a closing tag is known as a self-closing tag.
+
+8 : HTML attributes are special words used inside the opening tag of an element to control the element's behavior.
+    The src attribute in an img element specifies the image's URL (where the image is located).
+
+9 : All img elements should have an alt attribute. 
+    The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load.
+
+10 : You can link to another page with the anchor (a) element
+
+11 : A link's text must be placed between the opening and closing tags of an anchor (a) element.
+
+12 : In the previous step you turned the words link to cat pictures into a link by placing them between opening and closing anchor (a) tags. You can do the same to words inside of an element, such as a p element.
+
+13 : Add a target attribute with the value _blank to the anchor (a) element's opening tag, 
+     so that the link opens in a new tab.
+
+14 : In previous steps you used an anchor element to turn text into a link. 
+     Other types of content can also be turned into a link by wrapping it in anchor tags. 
+     Turn the image into a link by surrounding it with necessary element tags.
+
+15 : Before adding any new content, 
+     you should make use of a section element to separate the cat photos content from the future content.
+
+16 : When you add a lower rank heading element to the page, 
+     it's implied that you're starting a new subsection. 
+     After the last h2 element of the second section element, 
+     add an h3 element with this text:
+
+16 : add an unordered list (ul) element. 
+
+17 : Use list item (li) elements to create items in a list
