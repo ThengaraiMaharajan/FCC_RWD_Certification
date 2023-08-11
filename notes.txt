@@ -100,3 +100,57 @@
 33 : label elements are used to help associate the text for an input element with the input element itself 
      (especially for assistive technologies like screen readers). 
      For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+
+34 : The id attribute is used to identify specific HTML elements. 
+     Each id attribute's value must be unique from all other id values for the entire page.
+
+35 : Notice that both radio buttons can be selected at the same time. 
+     To make it so selecting one radio button automatically deselects the other, 
+     both buttons must have a name attribute with the same value.
+
+36 : If you select the Indoor radio button and submit the form, 
+     the form data for the button is based on its name and value attributes. 
+     Since your radio buttons do not have a value attribute, 
+     the form data will include indoor-outdoor=on, 
+     which is not useful when you have multiple buttons.
+     Add a value attribute to both radio buttons. 
+     For convenience, set the button's value attribute to the same value as its id attribute.
+
+37 : The fieldset element is used to group related inputs and labels together in a web form. 
+     fieldset elements are block-level elements, meaning that they appear on a new line.
+
+>>>  difference between block element and inline element
+
+38 : The legend element acts as a caption for the content in the fieldset element. 
+     It gives users context about what they should enter into that part of the form.
+
+39 : Forms commonly use checkboxes for questions that may have more than one answer
+
+40 : There's another way to associate an input element's text with the element itself. 
+     You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+41 : Add the name attribute with the value personality to the checkbox input element.
+     While you won't notice this in the browser, 
+     doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+
+42 : Like radio buttons, 
+     form data for selected checkboxes are name / value attribute pairs. 
+     While the value attribute is optional, 
+     it's best practice to include it with any checkboxes or radio buttons on the page.
+
+43 : In order to make a checkbox checked or radio button selected by default, 
+     you need to add the checked attribute to it. 
+     There's no need to set a value to the checked attribute. 
+     Instead, just add the word checked to the input element, 
+     making sure there is space between it and other attributes.
+
+44 : Notice that everything you've added to the page so far is inside the body element. 
+     All page content elements that should be rendered to the page go inside the body element. 
+     However, other important information goes inside the head element.
+
+45 : The title element determines what browsers show in the title bar or tab for the page.
+
+46 : Add the lang attribute with the value en to the opening html tag to specify that the language of the page is English.
+
+47 : All pages should begin with <!DOCTYPE html>. 
+     This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
