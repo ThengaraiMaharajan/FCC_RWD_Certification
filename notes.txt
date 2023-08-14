@@ -167,3 +167,25 @@
 49 : Inside the head element, 
      nest a meta element with an attribute named charset set to the value utf-8 to tell the browser how to encode characters for the page. 
      Note that meta elements are self-closing.
+>>> ### CSS starts Here
+50 : Up until now, you have been limited regarding the presentation and appearance of the content you create. 
+     To start taking control, add a style element within the head element.
+
+51 : You can add style to an element by specifying it in the style element and setting a property
+
+52 : You now have three type selectors with the exact same styling. 
+     You can add the same group of styles to many elements by creating a list of selectors
+     
+     selector1, selector2 {
+          property: value;
+     }
+
+53  : You have styled three elements by writing CSS inside the style tags. 
+      This works, but since there will be many more styles, it's best to put all the styles in a separate file and link to it.
+
+54 : Now you need to link the styles.css file so the styles will be applied again. 
+     Nest a self-closing link element in the head element. 
+     Give it a rel attribute value stylesheet and an href attribute value of styles.css.
+
+55 : For the styling of the page to look similar on mobile as it does on a desktop or laptop, 
+     you need to add a meta element with a special content attribute.
