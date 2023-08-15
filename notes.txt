@@ -189,3 +189,76 @@
 
 55 : For the styling of the page to look similar on mobile as it does on a desktop or laptop, 
      you need to add a meta element with a special content attribute.
+
+56 : The div element is used mainly for design layout purposes unlike the other content elements you have used so far. 
+     Add a div element inside the body element and then move all the other elements inside the new div.
+
+57 : The goal now is to make the div not take up the entire width of the page. 
+     The CSS width property is perfect for this. 
+     Create a new type selector in the style sheet that gives your div element a width of 300px.
+
+58 : The goal now is to make the div not take up the entire width of the page. 
+     The CSS width property is perfect for this. 
+     Create a new type selector in the style sheet that gives your div element a width of 300px.
+
+59 : Now it's easy to see that the text is centered inside the div element. 
+     Currently, the width of the div element is specified in pixels (px). 
+     Change the width property's value to be 80%, to make it 80% the width of its parent element (body)
+
+60 : Next, you want to center the div horizontally. 
+     You can do this by setting its margin-left and margin-right properties to auto. 
+     Think of the margin as invisible space around an element. 
+     Using these two margin properties, 
+     center the div element within the body element.
+
+60 : So far you have been using type selectors to style elements. 
+     A class selector is defined by a name with a dot directly in front of it, 
+     like this:
+
+     .class-name {
+     styles
+     }
+
+61 : To apply the class's styling to the div element, 
+     add a class attribute to the div element's opening tag and set its value to menu.
+
+62 : Delete the comment and its contents inside the body type selector. 
+     Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg)
+
+63 : It’s looking good. 
+     Time to start adding some menu items. 
+     Add an empty article element under the Coffee heading. 
+     It will contain a flavor and price of each coffee you currently offer.
+
+64 : article elements commonly contain multiple elements that have related information.
+
+65 : p elements are block-level elements, so they take up the entire width of their parent element.
+     To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements
+
+66 : The p elements are nested in an article element with the class attribute of item. 
+     You can style all the p elements nested anywhere in elements with a class named item like this:
+
+     .item p { }
+
+     Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.
+
+67 : That's closer, 
+     but the price didn't stay over on the right. 
+     This is because inline-block elements only take up the width of their content.
+
+     To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each.
+
+68 : That worked, 
+     but there is still a little space on the right of the price.
+     You could keep trying various percentages for the widths. 
+     Instead, 
+     use the back space key on your keyboard to move the p element with the class price next to the p element with the class flavor 
+     so that they are on the same line in the editor. 
+     Make sure there is no space between them.
+
+69 : Now go ahead and change both the flavor and price class' widths to be 50% again.
+
+70 : If you make the width of the page preview smaller, 
+     you will notice at some point, 
+     some of the text on the left starts wrapping around to the next line. 
+     This is because the width of the p elements on the left side can only take up 50% of the space.
