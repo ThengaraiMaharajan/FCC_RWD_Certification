@@ -262,3 +262,46 @@
      you will notice at some point, 
      some of the text on the left starts wrapping around to the next line. 
      This is because the width of the p elements on the left side can only take up 50% of the space.
+
+71 : Since all 4 sides of the menu have the same internal spacing, 
+     go ahead and delete the four properties and use a single padding property with the value 20px.
+
+72 : The current width of the menu will always take up 80% of the body element's width. 
+     On a very wide screen, 
+     the coffee and dessert appear far apart from their prices
+
+     Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+
+73 : You can change the font-family of text, 
+     to make it look different from the default font of your browser. 
+     Each browser has some common fonts available to it.
+     
+     Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable.
+
+74 : You can add a fallback value for the font-family by adding another font name separated by a comma. 
+     Fallbacks are used in instances where the initial is not found/available.
+
+75 : Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic.
+
+76 : The typography of heading elements (e.g. h1, h2) is set by default values of users' browsers.
+     Add two new type selectors (h1 and h2). 
+     Use the font-size property for both, but use the value 40px for the h1 and 30px for the h2.
+
+77 : You can use an hr element to display a divider between sections of different content
+
+78 : The default properties of an hr element will make it appear as a thin light grey line. 
+     You can change the height of the line by specifying a value for the height property.
+
+79 : Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. 
+     By changing the border to the same color as the background, 
+     the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+     Change the height property of the hr to be 2px, so the total height of it becomes 4px.
+
+80 : The default color of a link that has not yet been clicked on is typically blue. 
+     The default color of a link that has already been visited from a page is typically purple.
+
+81 : To make the footer links the same color regardless if a link has been visited, 
+     use a type selector for the anchor element (a) and use the value black for the color property.
+
+82 : You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like 
+     a:visited { propertyName: propertyValue; }
