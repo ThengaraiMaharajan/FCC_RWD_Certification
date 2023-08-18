@@ -303,5 +303,13 @@
 81 : To make the footer links the same color regardless if a link has been visited, 
      use a type selector for the anchor element (a) and use the value black for the color property.
 
+>>> pseudo-selector
+
 82 : You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like 
      a:visited { propertyName: propertyValue; }
+
+83 : You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like 
+     a:hover { propertyName: propertyValue; }.
+
+84 : You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like 
+     a:active { propertyName: propertyValue; }
