@@ -1,5 +1,4 @@
->>> CatPhotApp
-
+### CatPhotApp ###
 1 : HTML elements have opening tags like <h1> and closing tags like </h1>.
     The text for an element goes between its opening and closing tags.
 
@@ -157,7 +156,7 @@
 47 : All pages should begin with <!DOCTYPE html>. 
      This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
 
->>> Learn basic CSS by building Cafe menu
+### Learn basic CSS by building Cafe menu ###
 
 48 : Add the <!DOCTYPE html> tag, and an html element with a lang attribute of en.
 
@@ -329,3 +328,68 @@
      Negative values are created using a "-"(minus) in front of the value. 
      To complete this project, 
      go ahead and use a negative top margin of 25px in the img type selector.
+
+### Building Set Of coloured Markers ###
+
+88 : Add a DOCTYPE html declaration at the top of the document, 
+     and an html element after that. 
+     Give the html element a lang attribute with en as its value.
+
+89 : Nest a head element within the html element. Just after the head element, add a body element.
+
+90 : Remember that the title element gives search engines extra information about the page. 
+     It also displays the content of that title element in two more ways:
+     -> in the title bar when the page is open
+     -> in the browser tab for the page when you hover on it. 
+        Even if that tab is not active, once you hover on the tab, the title text is displayed
+
+91 : To tell browsers how to encode characters on your page, 
+     set the charset to utf-8. 
+     utf-8 is a universal character set that includes almost every character from all human languages. 
+     Inside the head element, 
+     nest a meta element with the attribute charset set to utf-8. 
+     Remember that meta elements are self-closing, and do not need a closing tag.
+
+92 : You can have multiple self-closing meta elements on a web page. 
+     Each meta element adds information about the page that cannot be expressed by other HTML elements.
+
+93 : To center your marker on the page, 
+     set its margin property to auto. 
+     This sets margin-top, margin-right, margin-bottom, and margin-left all to auto.
+
+94 : When the shorthand margin property has two values, 
+     it sets margin-top and margin-bottom to the first value, 
+         and margin-left and margin-right to the second value.
+
+95 : To give the markers different colors, 
+     you will need to add a unique class to each one. 
+     Multiple classes can be added to an element by listing them in the class attribute and separating them with a space.
+
+     If you add multiple classes to an HTML element, 
+     the styles of the first classes you list may be overridden by later classes.
+
+96 : There are two main color models: 
+     -> the additive RGB (red, green, blue) model used in electronic devices, and 
+     -> the subtractive CMYK (cyan, magenta, yellow, black) model used in print. 
+     In this project, you'll work with the RGB model. 
+     -> This means that colors begin as 
+        black, and change as different levels of red, green, and blue are introduced. 
+        An easy way to see this is with the CSS rgb function. 
+        Create a new CSS rule that targets the class container and set its background-color to black with rgb(0, 0, 0).
+
+97 : A function is a piece of code that can take an input and perform a specific action. 
+     The CSS rgb function accepts values, or arguments, for red, green, and blue, and produces a color:rgb(red, green, blue);
+     Each red, green, and blue value is a number from 0 to 255. 
+     0 means that there's 0% of that color, and is black. 
+     255 means that there's 100% of that color.
+     In the .one CSS rule, replace the color keyword red with the rgb function. 
+     For the rgb function, 
+     -> set the value for red to 255, 
+     -> the value for green to 0, and 
+     -> the value for blue to 0.
+
+98 : While the red and blue markers look the same, 
+     the green one is much lighter than it was before. 
+     This is because the green color keyword is actually a darker shade, 
+     and is about halfway between black and the maximum value for green.
+     In the .two CSS rule, set the green value in the rgb function to 127 to lower its intensity.
