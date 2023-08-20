@@ -313,3 +313,19 @@
 
 84 : You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like 
      a:active { propertyName: propertyValue; }
+
+85 : img elements are "like" inline elements
+
+86 : To make the image behave like heading elements (which are block-level), 
+     create an img type selector 
+     and use the value block for the display property 
+     and use the applicable margin-left and margin-right values to center it horizontally
+
+87 : It would be nice if the vertical space between the h2 elements and their associated icons was smaller. 
+     The h2 elements have default top and bottom margin space, 
+     so you could change the bottom margin of the h2 elements to say 0 or another number.
+     There is an easier way, 
+     simply add a negative top margin to the img elements to pull them up from their current positions. 
+     Negative values are created using a "-"(minus) in front of the value. 
+     To complete this project, 
+     go ahead and use a negative top margin of 25px in the img type selector.
