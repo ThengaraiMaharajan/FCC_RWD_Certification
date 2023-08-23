@@ -393,3 +393,68 @@
      This is because the green color keyword is actually a darker shade, 
      and is about halfway between black and the maximum value for green.
      In the .two CSS rule, set the green value in the rgb function to 127 to lower its intensity.
+
+99 : In the additive RGB color model, 
+     primary colors are colors that, when combined, create pure white. 
+     But for this to happen, each color needs to be at its highest intensity.
+
+100 : >>> primary color : set value of blue or green or red to 255
+      Secondary colors are the colors you get when you combine primary colors. 
+      You might have noticed some secondary colors in the last step as you changed the red, green, and blue values.
+      >>> secondary color : set value of blue or green to 255 , red or blue to 255, green or red to 255
+      Now that you're familiar with secondary colors, 
+      you'll learn how to create tertiary colors. 
+      Tertiary colors are created by combining a primary with a nearby secondary color.
+      >>> tertiary color : set value of blue to 255 and green to 127 or vice versa
+
+101 : A color wheel is a circle where similar colors, or hues, are near each other, and different ones are further apart. 
+      For example, pure red is between the hues rose and orange.
+      Two colors that are opposite from each other on the color wheel are called complementary colors
+      If two complementary colors are combined, they produce gray
+      But when they are placed side-by-side, these colors produce strong visual contrast and appear brighter.
+      This contrast can be distracting 
+      if it's overused on a website, and can make text hard to read if it's placed on a complementary-colored background.
+      It's better practice to choose one color as the dominant color, 
+      and use its complementary color as an accent to bring attention to certain content on the page
+
+102 : A very common way to apply color to an element with CSS is with hexadecimal or hex values. 
+      While hex values sound complicated, they're really just another form of RGB values.
+      Hex color values start with a # character and take six characters from 0-9 and A-F
+      The first pair of characters represent red, 
+      the second pair represent green, and 
+      the third pair represent blue
+
+103 : You may already be familiar with decimal, 
+      or base 10 values, which go from 0 - 9. Hexadecimal, or base 16 values, go from 0 - 9, then A - F,
+      With hex colors, 00 is 0% of that color, and FF is 100%
+
+104 : The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+      The CSS hsl function accepts 3 values: 
+      a number from 0 to 360 for hue, 
+      a percentage from 0 to 100 for saturation, 
+      and a percentage from 0 to 100 for lightness.
+
+      If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+      Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. 
+      You must add the percent sign % to the saturation and lightness values.
+      Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+
+105 : You've learned a few ways to set flat colors in CSS, but you can also use a color transition, or gradient, on an element.
+      A gradient is when one color transitions into another. The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used.
+      One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.
+
+106 : The linear-gradient function is very flexible -- here is the basic syntax you'll use in this tutorial:
+      linear-gradient(gradientDirection, color1, color2, ...);
+      gradientDirection is the direction of the line used for the transition. 
+      color1 and color2 are color arguments, 
+      which are the colors that will be used in the transition itself. 
+      These can be any type of color, including color keywords, hex, rgb, or hsl.
+      linear-gradient function accepts n number of color as arguments
+
+107 : Color-stops allow you to fine-tune where colors are placed along the gradient line. 
+      They are a length unit like px or percentages that follow a color in the linear-gradient function.
+      In the linear-gradient function, 
+      add a 75% color stop after the first red color argument. Do not add color stops to the other colors arguments
+     .red {
+               background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));
+          }
