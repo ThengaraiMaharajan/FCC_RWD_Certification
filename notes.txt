@@ -458,3 +458,33 @@
      .red {
                background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));
           }
+
+108 : Even without the color-stops, 
+      you might have noticed that the colors for the green marker transition at the same points as the red marker. 
+      The first color is at the start (0%), 
+      the second is in the middle (50%), 
+      and the last is at the end (100%) of the gradient line.
+
+      The linear-gradient function automatically calculates these values for you, 
+      and places colors evenly along the gradient line by default
+
+109 : If no gradientDirection argument is provided to the linear-gradient function, 
+      it arranges colors from top to bottom, or along a 180 degree line, by default.
+
+110 : Opacity describes how opaque, or non-transparent, something is
+      With the CSS opacity property, 
+      you can control how opaque or transparent an element is. 
+      With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, 
+      the element will be completely opaque like it is by default.
+
+111 : Another way to set the opacity for an element is with the alpha channel. Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
+
+112 :  To add an alpha channel to an rgb color, use the rgba function instead. 
+       The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel
+
+113 : You can also use an alpha channel with hsl and hex colors. You will see how to do that soon
+
+114 : after creating cap class div 
+      It looks like your sleeve disappeared, but don't worry -- it's still there. What happened is that your new cap div is taking up the entire width of the marker, and is pushing the sleeve down to the next line.
+      This is because the default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks.
+      To position two div elements on the same line, set their display properties to inline-block.
