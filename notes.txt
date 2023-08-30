@@ -534,3 +534,8 @@
       box-shadow: offsetX offsetY blurRadius spreadRadius color;
 
 124 : Remember that you don't need to add units to a zero value.
+
+### Registration Form ###
+125 : doctype, html, head, body
+
+126 : Please fill out this form with the required information
