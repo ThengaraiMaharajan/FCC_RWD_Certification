@@ -592,4 +592,28 @@
 
 ##### SET 2 #####
 
+### rothko painting ###
 137 : In the CSS box model, every HTML element is treated as a box with four areas
+
+### flex box photo gallery ###
+138 : Within your head element, add a meta tag with the name set to viewport and the content set to width=device-width, initial-scale=1.
+139 : Notice how the blue image border extends beyond the red gallery border. 
+      This is due to the way browsers calculate the size of container elements.
+      The box-sizing property is used to set this behavior. 
+      By default, the content-box model is used. 
+      With this model, when an element has a specific width, that width is calculated based only on the element's content. 
+      Padding and border values get added to the total width, so the element grows to accommodate these values.
+      Try setting box-sizing to content-box explicitly, with the global * selector. 
+      At this point, you will not see any changes, because you are using the default value.
+140 : The border-box sizing model does the opposite of content-box. 
+      The total width of the element, including padding and border, will be the explicit width set. 
+      The content of the element will shrink to make room for the padding and border.
+141 : Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container.
+      To use it, give an element a display property of flex. 
+      This will make the element a flex container. Any direct children of a flex container are called flex items.
+142 : Flexbox has a main and cross axis. 
+      The main axis is defined by the flex-direction property, which has four possible values:
+      row (default): horizontal axis with flex items from left to right
+      row-reverse: horizontal axis with flex items from right to left
+      column: vertical axis with flex items from top to bottom
+      column-reverse: vertical axis with flex items from bottom to top
