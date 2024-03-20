@@ -1,3 +1,4 @@
+##### SET 1 #####
 ### CatPhotApp ###
 1 : HTML elements have opening tags like <h1> and closing tags like </h1>.
     The text for an element goes between its opening and closing tags.
@@ -588,3 +589,7 @@
 
 136 : Select only the .inline elements, and give them width of unset. 
       This will remove the earlier rule which set all the input elements to width: 100%.
+
+##### SET 2 #####
+
+137 : In the CSS box model, every HTML element is treated as a box with four areas
