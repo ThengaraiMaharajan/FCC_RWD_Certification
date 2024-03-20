@@ -1,0 +1,76 @@
+<html !DOCTYPE>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 class="glassBg" id="title">Meeting Request Form</h1>
+    <p  class="glassBg" id="description">
+      Please fill the form below to join the meeting 
+    </p>
+    <form class="glassBg" id="survey-form">
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label id="name-label" for="name">Name
+          <input type="text" id="name" required placeholder="Enter your name, Eg : John"/>
+        </label>
+        <label id="email-label" for="email">Email
+          <input type="email" id="email" required placeholder="Enter your name, Eg : john@mail.com"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label id="number-label" for="number">Age
+          <input type="number" id="number" min="18" max="120" required placeholder="Enter your age, Eg : 23"/>
+        </label>
+        <label for="dropdown">
+          Designation
+          <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1" selected>Student</option>
+              <option value="2">Teacher</option>
+              <option value="3">Professional</option>
+              <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>History</legend>
+        <label>
+          Have you attended out seminar before
+        </label>
+        <br/>
+         <label for="history-yes">
+        <input type="radio" value="yes" id="history-yes" name="history"/> Yes
+      </label>
+      <label for="history-no">
+        <input type="radio" value="no" id="history-no" name="history" checked/> No
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Consent</legend>
+        <label for="confirmation">
+          <input type="checkbox" id="confirmation" name="confirmation" value="confirmation" /> The above mentioned information are true
+        </label>
+        <br/>
+        <label for="readTerms">
+          <input type="checkbox" id="readTerms" name="readTerms" value="readTerms" /> I have read the Terms and Conditions
+        </label>
+        <br/>
+        <label for="acceptTerms">
+          <input type="checkbox" id="acceptTerms" name="acceptTerms" value="acceptTerms" /> I accept the Terms and Conditions
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Bio</legend>
+        <label for="feedBack">
+          Tell us about yourself
+          <textarea type="text" id="feedBack" name="feedBack" row="15" col="100"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit"/>
+    </form>
+  </body>
+</html>

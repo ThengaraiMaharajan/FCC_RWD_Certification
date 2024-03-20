@@ -1,0 +1,69 @@
+body{
+    font-family: tahoma;
+    background : url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+  }
+  
+  h1,p{
+    color:#ffffff;
+    border : solid 1 px #ffffff;
+    text-align:center;
+  }
+  
+  form{
+    max-width:500px;
+    width:60vw;
+    margin:10px auto;
+  }
+  legend{
+    color:#ffffff;
+    border : solid 1 px #ffffff;
+    text-align:center;
+  }
+  fieldset{
+    border-radius : 5px;
+    border:none;
+    margin: 5px auto;
+  }
+  label{
+    min-height:2.5em;
+    margin : 5px;
+    color:#ffffff;
+  }
+  input, select, textarea {
+    width:98%;
+    min-height:2.5em;
+    margin : 5px;
+    border-radius : 5px;
+    color:#000000;
+    border : solid 1 px #ffffff;
+  }
+  input[type=radio],input[type=checkbox]{
+    width : unset;
+    margin : unset;
+    display:inline;
+    vertical-align:middle;
+  }
+  input[type=submit]{
+     display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
+  }
+  option{
+    background:transparent;
+    color:#000000;
+  }
+  
+  
+  .glassBg{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
