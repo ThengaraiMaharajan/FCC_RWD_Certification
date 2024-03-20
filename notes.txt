@@ -569,3 +569,22 @@
 
 134 : With type="password" you can use the pattern attribute to define a regular expression that the password must match to be considered valid.
       Add a pattern attribute to the password input element to require the input match: [a-z0-5]{8,}
+
+135 : You only want one radio input to be selectable at a time. 
+      However, the form does not know the radio inputs are related.
+      To relate the radio inputs, give them the same name attribute
+
+136 : Currently users can submit the form without checking the radio inputs. 
+      Although you previously used the required attribute to indicate that an input is required, 
+      it won't work in this case because adding required to both inputs will convey the wrong information to users.
+
+      To solve this, 
+      you can provide context of what is needed by adding a legend element with text Account type (required) before the label elements within the second fieldset.
+      Then add the checked attribute to the Personal input to ensure the form is submitted with the required data in it.
+
+137 : You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+      p:last-of-type { }
+      That will select the last p element. Create a new selector that targets the last fieldset element
+
+136 : Select only the .inline elements, and give them width of unset. 
+      This will remove the earlier rule which set all the input elements to width: 100%.
