@@ -641,3 +641,21 @@
       To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.
 150 : The rem unit stands for root em, and is relative to the font size of the html element.
 151 : The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+### building a quiz ###
+152 : 
+153 : 
+154 : Another important meta element for accessibility and SEO is the description definition. 
+      The value of the content attribute is used by search engines to provide a description of your page.
+      Add a meta element with the name attribute set to description, and give it a useful content attribute.
+155 : Lastly in the head, the title element is useful for screen readers to understand the content of a page. 
+      Furthermore, it is an important part of SEO.
+      Give your page a title that is descriptive and concise.
+156 : Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. 
+      This is accomplished with semantic HTML elements.
+      Add a header and a main element to your page.
+      The header element will be used to introduce the page, as well as provide a navigation menu.
+      The main element will contain the core content of your page.
+157 : 
+158 : A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image to be scaled without affecting the resolution of the resultant image.
+      img {width: max(250px, 25vw);}
+159 : The child combinator selector > is used between selectors to target only elements that match the second selector and are a direct child of the first selector.
