@@ -702,3 +702,12 @@
           }
       Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.
 170 : Style the text within your #years element by creating a #years span[class] selector
+171 : The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, 
+      any of your span elements that do not have the sr-only class. 
+      This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten.
+172 : The [attribute="value"] selector targets any element that has an attribute with a specific value. 
+      Create a tr[class="total"] selector to target specifically your tr elements with the total class
+173 : The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the only class is total. 
+      The second will select tr elements where the class includes total.
+174 : The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type. 
+      Use this pseudo-selector to target the third td element within your total table rows. Give it a right padding of 0.5rem.
