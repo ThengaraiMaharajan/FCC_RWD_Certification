@@ -686,3 +686,19 @@
       Give each of the navigation links a single-letter access key.
       Note: It is not always advised to use access keys, but they can be useful
       Well done. You have completed the Accessibility Quiz practice project
+165 : The span[class~="sr-only"] selector will select any span element whose class includes sr-only
+166 : The CSS clip property is used to define the visible portions of an element. 
+      Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px).
+      The clip-path property determines the shape the clip property should take. 
+      Set the clip-path property to the value of inset(50%), forming the clip-path into a rectangle within the element.
+167 : The :first-of-type pseudo-selector is used to target the first element that matches the selector. 
+      Create an h1 .flex span:first-of-type
+168 : The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector.
+169 : The calc() function is a CSS function that allows you to calculate a value based on other values. 
+      For example, you can use it to calculate the width of the viewport minus the margin of an element:
+          .example {
+          margin: 10px;
+          width: calc(100% - 20px);
+          }
+      Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.
+170 : Style the text within your #years element by creating a #years span[class] selector
