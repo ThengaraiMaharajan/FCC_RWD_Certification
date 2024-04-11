@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <main id="main-doc" >
+      <nav id="navbar" >
+        <header>TS Documentation</header>
+        <a class="nav-link" href="#Introduction" >Introduction</a>
+        <a class="nav-link" href="#Prerequisites" >Prerequisites</a>
+        <a class="nav-link" href="#Javascript_and_Typescript" >Javascript and Typescript</a>
+        <a class="nav-link" href="#Get_Started" >Get Started</a>
+        <a class="nav-link" href="#Object_Oriented_Programming" >Object Oriented Programming</a>
+        <a class="nav-link" href="#Interface" >Interface</a>
+        <a class="nav-link" href="#Objects" >Objects</a>
+      </nav>
+      <article>
+        <section class="main-section" id="Introduction" >
+        <header>Introduction</header>
+        <p>
+          TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+        </p>
+        <p>
+          TypeScript is JavaScript with syntax for types.
+        </p>
+        <p>
+          TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
+          TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps.
+          TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.
+
+        </p>
+      </section>
+      <section class="main-section" id="Prerequisites" >
+        <header>Prerequisites</header>
+        <p>
+          TypeScript, as its name suggests, is a typed superset of JavaScript, which means that all JavaScript code is valid in TypeScript – making it very easy to get started. In addition, TypeScript has several language features including static typing, most ES6 syntax, and object-oriented programming constructs. It is a compiled language, which means you’ll have to transpile it to JavaScript before it can be run, but the benefits are well worth it.
+        </p>
+        <p>
+          A working knowledge of JavaScript, object-oriented programming, and the command line is assumed. The only prerequisites are a code editor and npm, the Node.js package manager.
+
+If you do not have npm installed, install the appropriate Node.js runtime for your operating system. Node.js is a JavaScript runtime outside the browser (for use in servers, etc), and npm is a package manager for various JavaScript packages and command line tools.
+        </p>
+        <p>
+          The TypeScript compiler is available as an npm package; you can install it by running:
+        </p>
+        <code>
+          npm install -g typescript
+        </code>
+      </section>
+      <section class="main-section" id="Javascript_and_Typescript" >
+        <header>Javascript and Typescript</header>
+        <p>TypeScript stands in an unusual relationship to JavaScript. TypeScript offers all of JavaScript’s features, and an additional layer on top of these: TypeScript’s type system.</p>
+        <p>For example, JavaScript provides language primitives like string and number, but it doesn’t check that you’ve consistently assigned these. TypeScript does.
+
+This means that your existing working JavaScript code is also TypeScript code. The main benefit of TypeScript is that it can highlight unexpected behavior in your code, lowering the chance of bugs.
+
+This tutorial provides a brief overview of TypeScript, focusing on its type system.</p>
+        <p>
+          TypeScript knows the JavaScript language and will generate types for you in many cases. For example in creating a variable and assigning it to a particular value, TypeScript will use the value as its type.
+
+
+Try
+By understanding how JavaScript works, TypeScript can build a type-system that accepts JavaScript code but has types. This offers a type-system without needing to add extra characters to make types explicit in your code. That’s how TypeScript knows that helloWorld is a string in the above example.
+
+You may have written JavaScript in Visual Studio Code, and had editor auto-completion. Visual Studio Code uses TypeScript under the hood to make it easier to work with JavaScript.
+        </p>
+        <code>
+          let helloWorld = "Hello World";
+        
+let helloWorld: string
+        </code>
+        <code>
+          const user = {
+  name: "Hayes",
+  id: 0,
+};
+        </code>
+        <ul>
+          <li>VS Code</li>
+          <li>NPM (Node Package Manager)</li>
+          <li>Node</li>
+          <li>OS</li>
+          <li>Terminal</li>
+        <ul>
+      </section>
+      <section class="main-section" id="Get_Started" >
+        <header>Get Started</header>
+        <p>
+          Congratulations on choosing TypeScript as one of your first languages — you’re already making good decisions!
+
+You’ve probably already heard that TypeScript is a “flavor” or “variant” of JavaScript. The relationship between TypeScript (TS) and JavaScript (JS) is rather unique among modern programming languages, so learning more about this relationship will help you understand how TypeScript adds to JavaScript.
+        </p>
+        <p>
+          By understanding how JavaScript works, TypeScript can build a type-system that accepts JavaScript code but has types. This offers a type-system without needing to add extra characters to make types explicit in your code. That’s how TypeScript knows that helloWorld is a string in the above example.
+
+You may have written JavaScript in Visual Studio Code, and had editor auto-completion. Visual Studio Code uses TypeScript under the hood to make it easier to work with JavaScript.
+        </p>
+        <p>
+          You can use a wide variety of design patterns in JavaScript. However, some design patterns make it difficult for types to be inferred automatically (for example, patterns that use dynamic programming). To cover these cases, TypeScript supports an extension of the JavaScript language, which offers places for you to tell TypeScript what the types should be.
+        </p>
+        <code>
+          type WindowStates = "open" | "closed" | "minimized";
+type LockStates = "locked" | "unlocked";
+type PositiveOddNumbersUnderTen = 1 | 3 | 5 | 7 | 9;
+        </code>
+        <p>
+You can explicitly describe this object’s shape using an interface declaration:
+        </p>
+        <code>
+          interface User {
+  name: string;
+  id: number;
+}
+        </code>
+      </section>
+      <section class="main-section" id="Object_Oriented_Programming" >
+        <header>Object Oriented Programming</header>
+        <p>
+          A class is a blueprint used to create an instance of an object. It is made up of variables (called instance variables) and methods.
+
+Every object instantiated from a class will have all the properties of the class that instantiated it.
+        </p>
+        <p>
+          A constructor function is a class function responsible for initializing a class’s instance variables.
+
+Constructors in TypeScript are defined using the constructor keyword. The constructor function takes all class’s instance variables as parameters, initializes them, and assigns their values in its body.
+        </p>
+        <p>
+          Inheritance in object-oriented programming refers to a mechanism where a class (subclass) inherits properties from an existing class (superclass).
+
+The subclass can also extend functionality by adding new properties or methods.
+        </p>
+        <code>
+          class Car {  
+            model: string;  
+            year: number;  
+            price: string;  
+            drive() {    
+              console.log('The Car has Started driving');  
+              }  
+            stop() {    
+              console.log('The car has stopped');  
+              }
+          }
+        </code>
+      </section>
+      <section class="main-section" id="Interface" >
+        <header>Interface</header>
+        <p>
+          One of TypeScript’s core principles is that type checking focuses on the shape that values have. This is sometimes called “duck typing” or “structural subtyping”. In TypeScript, interfaces fill the role of naming these types, and are a powerful way of defining contracts within your code as well as contracts with code outside of your project.
+        </p>
+        <p>
+          The type checker checks the call to printLabel. The printLabel function has a single parameter that requires that the object passed in has a property called label of type string. Notice that our object actually has more properties than this, but the compiler only checks that at least the ones required are present and match the types required. There are some cases where TypeScript isn’t as lenient, which we’ll cover in a bit.
+        </p>
+        
+        <code>
+          interface LabeledValue {
+  label: string;
+}
+ 
+function printLabel(labeledObj: LabeledValue) {
+  console.log(labeledObj.label);
+}
+ 
+let myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
+        </code>
+        <p>
+          The interface LabeledValue is a name we can now use to describe the requirement in the previous example. It still represents having a single property called label that is of type string. Notice we didn’t have to explicitly say that the object we pass to printLabel implements this interface like we might have to in other languages. Here, it’s only the shape that matters. If the object we pass to the function meets the requirements listed, then it’s allowed.
+
+It’s worth pointing out that the type checker does not require that these properties come in any sort of order, only that the properties the interface requires are present and have the required type.
+        </p>
+      </section>
+      <section class="main-section" id="Objects" >
+        <header>Objects</header>
+        <p>
+          When subclasses inherit properties and methods from their superclass, the inherited properties can be modified or extended. This process of modifying an inherited property is known as overriding.
+
+Overriding is implemented if a subclass has to execute logic that differs from that of its superclass when the same method is invoked.
+
+A superclass’s property can be overridden by re-declaring the same property in a subclass.
+        </p>
+
+        <p></p>
+        <code>
+          class A {
+  print() {
+    console.log('I am class A');
+  }
+}
+
+class B extends A {
+  print() {
+    console.log('I am class B');
+  }
+}
+        </code>
+                <p>
+          Other scenarios might exist where the functionality needs to be “extended,” not completely overridden. In these scenarios, you must call the method with the super keyword first, then implement its new functionality.
+        </p>
+        <code>
+          class B extends A {
+  print() {
+    super.print(); //I am class A
+    console.log('I am class B');
+  }
+}
+
+const object = new B();
+object.print();// I am class A, I am class B
+        </code>
+        <p>
+          The super() method first executes the command from the superclass and then executes the command on the subclass.
+        </p>
+      </section>
+      </article>
+    </main>
+  </body>
+</html>
