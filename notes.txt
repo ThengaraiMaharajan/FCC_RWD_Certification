@@ -769,3 +769,10 @@
           color1,
           color2
      );
+190 : So far, all the gradients you created have gone from top to bottom, that's the default direction. 
+      You can specify another direction by adding it before your colors like this:
+      gradient-type(
+          direction,
+          color1,
+          color2
+      );
