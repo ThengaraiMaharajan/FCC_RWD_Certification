@@ -73,6 +73,6 @@ body{
   
   @media (max-width:1800px){
     hr{
-      max-width : 2000px;
+          max-width : 2000px;
     }
   }
