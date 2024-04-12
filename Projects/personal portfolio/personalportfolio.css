@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin : 0;
+    font-family:verdana;
+    letter-spacing : 0.6px;
+  }
+  
+  header{
+    position:fixed;
+    top:0;
+    left :0;
+    right : 0;
+  }
+  
+  header nav{
+    height : 60px;
+    border:solid 1px black;
+    display : flex;
+    justify-content : space-around;
+    align-items:center;
+  }
+  
+  header nav a{
+    height : 50px;
+    width : 200px;  
+    border : solid 1px black;
+    display:flex;
+    justify-content : center;
+    align-items:center;
+    text-decoration : none;
+    color : blue;
+    background : orange
+  }
+  
+  section{
+    padding-top : 65px;
+    height : 100vh;
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+  }
+  
+  article{
+    display:flex;
+    justify-content : space-around;
+    align-items : center;
+    flex-direction : row;
+      width : 100%;
+    height : 75%;
+  }
+  
+  article .project-tile{
+    width : 30%;
+    height : 75%;
+    border : solid 1px black;
+  }
+  
+  h1,h2{
+  text-align : center;
+  font-size : 75px;
+  }
+  
+  h3 , h4{
+    text-align : center;
+  }
+  
+  hr{
+    margin : 5px;
+    padding : 5px;
+    border : solid 1px black;
+  }
+  
+  @media (max-width:1800px){
+    hr{
+      max-width : 2000px;
+    }
+  }
