@@ -848,3 +848,5 @@
 The animation-timing-function property sets how the animation should progress over time. There are a few different values for this property, but you want the Ferris wheel animation to run at the same rate from start to finish. Set the animation-timing-function to linear in your .wheel selector.
 
 210 : Set the animation property of the .cabin rule to cabins 10s linear infinite. This will set the animation-name, animation-duration, animation-timing-function, and animation-iteration-count properties in that order.
+
+211 : To make the mountain look more like a mountain, you can use the skew transform function, which takes two arguments. The first being an angle to shear the x-axis by, and the second being an angle to shear the y-axis by.
